@@ -1,0 +1,11 @@
+name: External Events
+on:
+  repository_dispatch:
+
+jobs:
+  echo-a-string:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Repositpy Dispatch"
+
+#### It should be pushed to Default branch .i.e the main branch
