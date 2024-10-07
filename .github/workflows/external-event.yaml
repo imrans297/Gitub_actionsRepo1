@@ -1,11 +1,12 @@
 name: External Events
 on:
   repository_dispatch:
+  types: [build]
 
 jobs:
   echo-a-string:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Repositpy Dispatch"
+      - run: echo echo ${{ github.event.client_payload.env }}
 
 #### It should be pushed to Default branch .i.e the main branch
