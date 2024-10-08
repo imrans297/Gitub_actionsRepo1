@@ -7,6 +7,8 @@ jobs:
         steps:
             - name: step 1
               run: sleep 20
+            - name: Fail
+              run: exit 1
             - name: Runson Failure
               if: failure()
               run: echo 'Runs Onlu on failure'
