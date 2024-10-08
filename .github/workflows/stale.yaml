@@ -3,7 +3,6 @@ on:
   schedule:
     - cron: "0 14 * * *"
     - cron: "0/5 * * * * ## JUST FOR TESTING
-
 jobs:
   stale:
     runs-on: ubuntu-latest
